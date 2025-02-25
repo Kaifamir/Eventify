@@ -1,0 +1,317 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap");
+
+:root {
+  --color-background: #1e1e2e;
+  --color-primary: #f72585;
+  --color-secondary: #4cc9f0;
+  --color-accent: #7209b7;
+  --color-text: #ffffff;
+  --color-text-muted: rgba(255, 255, 255, 0.7);
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.onboarding-screen {
+  min-height: 100vh;
+  background: var(--color-background);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  position: relative;
+}
+
+.content-wrapper {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  position: relative;
+  z-index: 1;
+}
+
+.left-section {
+  order: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.right-section {
+  order: 2;
+  padding: 2rem;
+  background-color: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border-radius: 1rem;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+.eventify-logo {
+  text-align: center;
+}
+
+.eventify-logo h1 {
+  color: var(--color-text);
+  font-weight: 700;
+  font-size: 4rem;
+  margin-bottom: 0.5rem;
+  letter-spacing: -2px;
+}
+
+.eventify-logo h1 span {
+  color: var(--color-primary);
+}
+
+.eventify-logo p {
+  font-size: 1.25rem;
+  color: var(--color-text-muted);
+  font-weight: 300;
+}
+
+.eventify-description {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+.feature {
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  display: flex;
+  align-items: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.feature-icon {
+  font-size: 2.5rem;
+  margin-right: 1rem;
+}
+
+.feature-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.feature-main {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--color-text);
+  margin-bottom: 0.25rem;
+}
+
+.feature-subtext {
+  font-size: 0.875rem;
+  color: var(--color-text-muted);
+}
+
+.sign-in-form {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.sign-in-form h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--color-text);
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.sign-in-form input {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: var(--color-text);
+  border: none;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+.sign-in-form input::placeholder {
+  color: var(--color-text-muted);
+}
+
+.sign-in-form button {
+  width: 100%;
+  font-weight: 600;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.sign-in-form button:hover {
+  transform: translateY(-2px);
+}
+
+.sign-in-form .sign-in-button {
+  background-color: var(--color-primary);
+  color: var(--color-text);
+}
+
+.sign-in-form .sign-up-button {
+  background-color: transparent;
+  color: var(--color-text);
+  border: 2px solid var(--color-text);
+}
+
+.sign-in-form .divider {
+  position: relative;
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.sign-in-form .divider::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  border-top: 1px solid var(--color-text-muted);
+}
+
+.sign-in-form .divider span {
+  position: relative;
+  background-color: var(--color-background);
+  padding: 0 1rem;
+  color: var(--color-text-muted);
+  font-size: 0.875rem;
+  text-transform: uppercase;
+}
+
+.sign-in-form .google-button {
+  background-color: var(--color-text);
+  color: var(--color-background);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sign-in-form .google-button svg {
+  margin-right: 0.5rem;
+}
+
+.background-animation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.circle {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(60px);
+}
+
+.circle1 {
+  background: rgba(247, 37, 133, 0.3);
+  width: 300px;
+  height: 300px;
+  left: -150px;
+  top: -150px;
+  animation: float 8s infinite;
+}
+
+.circle2 {
+  background: rgba(76, 201, 240, 0.3);
+  width: 400px;
+  height: 400px;
+  right: -200px;
+  bottom: -200px;
+  animation: float 10s infinite reverse;
+}
+
+.circle3 {
+  background: rgba(114, 9, 183, 0.2);
+  width: 200px;
+  height: 200px;
+  right: 30%;
+  top: 30%;
+  animation: float 12s infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  33% {
+    transform: translate(30px, 30px) rotate(120deg);
+  }
+  66% {
+    transform: translate(-30px, 30px) rotate(240deg);
+  }
+  100% {
+    transform: translate(0, 0) rotate(360deg);
+  }
+}
+
+@media (min-width: 768px) {
+  .content-wrapper {
+    flex-direction: row;
+    gap: 4rem;
+  }
+
+  .left-section,
+  .right-section {
+    width: 50%;
+  }
+
+  .left-section {
+    padding: 2rem 0;
+  }
+
+  .eventify-logo {
+    text-align: left;
+  }
+
+  .eventify-logo h1 {
+    font-size: 5rem;
+  }
+
+  .eventify-description {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .content-wrapper {
+    gap: 6rem;
+  }
+
+  .left-section {
+    padding: 3rem 0;
+  }
+
+  .right-section {
+    padding: 3rem;
+  }
+
+  .eventify-logo h1 {
+    font-size: 6rem;
+  }
+
+  .eventify-logo p {
+    font-size: 1.5rem;
+  }
+}
+

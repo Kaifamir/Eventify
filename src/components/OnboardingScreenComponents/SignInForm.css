@@ -1,0 +1,93 @@
+.sign-in-form {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  
+  .sign-in-form h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--color-text);
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  
+  .sign-in-form input {
+    width: calc(100% - 2rem);
+    background-color: rgba(255, 255, 255, 0.1);
+    color: var(--color-text);
+    border: none;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+  }
+  
+  .sign-in-form input::placeholder {
+    color: var(--color-muted);
+  }
+  
+  .sign-in-form button {
+    width: 100%;
+    font-weight: 600;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .sign-in-form button:hover {
+    transform: translateY(-2px);
+  }
+  
+  .sign-in-form .sign-in-button {
+    background-color: var(--color-primary);
+    color: var(--color-text);
+  }
+  
+  .sign-in-form .sign-up-button {
+    background-color: transparent;
+    color: var(--color-text);
+    border: 2px solid var(--color-text);
+  }
+  
+  .sign-in-form .divider {
+    position: relative;
+    margin: 2rem 0;
+    text-align: center;
+  }
+  
+  .sign-in-form .divider::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    border-top: 1px solid var(--color-muted);
+  }
+  
+  .sign-in-form .divider span {
+    position: relative;
+    background-color: var(--color-background);
+    padding: 0 1rem;
+    color: var(--color-muted);
+    font-size: 0.875rem;
+    text-transform: uppercase;
+  }
+  
+  .sign-in-form .google-button {
+    background-color: var(--color-text);
+    color: var(--color-background);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .sign-in-form .google-button svg {
+    margin-right: 0.5rem;
+  }
+  
+  
