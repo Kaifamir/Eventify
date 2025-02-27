@@ -2,6 +2,8 @@
   min-height: 100vh;
   background: var(--color-background);
   color: var(--color-text);
+  display: flex;
+  flex-direction: column;
 }
 
 .dashboard-header {
@@ -74,11 +76,33 @@
   color: var(--color-muted);
 }
 
+.dashboard-main {
+  flex: 1;
+  display: flex;
+  gap: 1.5rem;
+  padding: 1.5rem;
+  margin-bottom: 4rem; /* Space for navigation */
+}
+
+.left-column {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+}
+
+.right-column {
+  flex: 1;
+}
+
 @media (max-width: 768px) {
-  .dashboard-grid {
-    grid-template-columns: 1fr;
+  .dashboard-main {
+    flex-direction: column;
   }
-  
+
+  .left-column {
+    width: 100%;
+  }
+
   .welcome-section h2 {
     font-size: 2rem;
   }
