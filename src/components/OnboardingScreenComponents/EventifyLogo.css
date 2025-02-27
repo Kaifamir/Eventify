@@ -9,10 +9,11 @@
     font-size: 4rem;
     margin-bottom: 0.25rem;
     letter-spacing: -2px;
+    display: inline-flex;
   }
   
   .eventify-logo h1 span {
-    color: var(--color-accent);
+    color: var(--color-primary);
     display: inline-block;
     animation: subtleSlide 0.8s ease-out;
   }
@@ -21,6 +22,7 @@
     font-size: 1.25rem;
     color: var(--color-muted);
     font-weight: 300;
+    margin-top: 0;
   }
   
   @media (min-width: 768px) {
